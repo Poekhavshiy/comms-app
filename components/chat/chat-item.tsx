@@ -238,7 +238,7 @@ export const ChatItem = ({
                 apiUrl: `${socketUrl}/${id}`,
                 query: socketQuery,
                })}
-              className="cursor-pointer ml-auto w-4 h-4 text-zinc-500 hover:text-[#C3FC5E] dark:hover:text-[#C3FC5E] transition"
+              className="cursor-pointer ml-auto w-4 h-4 text-zinc-500 hover:text-red-500 dark:hover:text-red-500 transition"
             />
           </ActionTooltip>
         </div>

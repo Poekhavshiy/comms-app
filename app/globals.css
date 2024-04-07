@@ -202,11 +202,30 @@ body,
 
 
 .cl-internal-1vi7rps {
-  color: #ffffff;
-  background-color: #C3FC5E;
+  background-color: #1D1D1D;
 }
-.cl-internal-1ptfnbv {
-  font-size: 14px;
-  color: #292929;
 
+.cl-internal-1ho4xv {
+  font-size: 20px;
+  color: #ffffff;
+
+}
+
+.cl-internal-1ptfnbv {
+  font-size: 20px;
+  color: #B2FF33;
+
+}
+
+.cl-userButtonPopoverActionButtonText {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.cl-userButtonPopoverActionButtonIcon__signOut {
+  color: #EF4444;
+}
+
+.cl-userButtonPopoverActionButtonIcon__manageAccount {
+  color: #B2FF33;
 }
