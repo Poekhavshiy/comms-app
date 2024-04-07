@@ -6,7 +6,7 @@ import qs from "query-string";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Member, MemberRole, Profile } from "@prisma/client";
-import { Edit, FileIcon, FlaskConical, Package2, ShieldAlert, ShieldCheck, Trash } from "lucide-react";
+import { Edit, FileIcon, ShieldAlert, ShieldCheck, Trash } from "lucide-react";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { useRouter, useParams } from "next/navigation";
@@ -41,8 +41,8 @@ interface ChatItemProps {
 
 const roleIconMap = {
   "GUEST": null,
-  "MODERATOR": <FlaskConical className="h-4 w-4 ml-2 text-[#C3FC5E]" />,
-  "ADMIN": <FlaskConical className="h-4 w-4 ml-2 text-[#C3FC5E]" />,
+  "MODERATOR": <ShieldCheck className="h-4 w-4 ml-2 text-indigo-500" />,
+  "ADMIN": <ShieldAlert className="h-4 w-4 ml-2 text-rose-500" />,
 }
 
 const formSchema = z.object({
@@ -124,8 +124,8 @@ export const ChatItem = ({
   const isOwner = currentMember.id === member.id;
   const canDeleteMessage = !deleted && (isAdmin || isModerator || isOwner);
   const canEditMessage = !deleted && isOwner && !fileUrl;
-  const isRAR = fileType === "rar" && fileUrl;
-  const isImage = !isRAR && fileUrl;
+  const isPDF = fileType === "pdf" && fileUrl;
+  const isImage = !isPDF && fileUrl;
 
   return (
     <div className="relative group flex items-center hover:bg-black/5 p-4 transition w-full">
@@ -162,16 +162,16 @@ export const ChatItem = ({
               />
             </a>
           )}
-          {isRAR && (
+          {isPDF && (
             <div className="relative flex items-center p-2 mt-2 rounded-md bg-background/10">
-              <Package2 className="h-10 w-10 fill-[#292929] stroke-[#C3FC5E]" />
+              <FileIcon className="h-10 w-10 fill-indigo-200 stroke-indigo-400" />
               <a 
                 href={fileUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="ml-2 text-sm text-[#C3FC5E] dark:text-[#C3FC5E] hover:underline"
+                className="ml-2 text-sm text-indigo-500 dark:text-indigo-400 hover:underline"
               >
-                RAR archive
+                PDF File
               </a>
             </div>
           )}
@@ -228,7 +228,7 @@ export const ChatItem = ({
             <ActionTooltip label="Edit">
               <Edit
                 onClick={() => setIsEditing(true)}
-                className="cursor-pointer ml-auto w-4 h-4 text-zinc-500 hover:text-[#C3FC5E] dark:hover:text-[#C3FC5E] transition"
+                className="cursor-pointer ml-auto w-4 h-4 text-zinc-500 hover:text-zinc-600 dark:hover:text-zinc-300 transition"
               />
             </ActionTooltip>
           )}
@@ -238,7 +238,7 @@ export const ChatItem = ({
                 apiUrl: `${socketUrl}/${id}`,
                 query: socketQuery,
                })}
-              className="cursor-pointer ml-auto w-4 h-4 text-zinc-500 hover:text-red-500  dark:hover:text-red-500 transition"
+              className="cursor-pointer ml-auto w-4 h-4 text-zinc-500 hover:text-zinc-600 dark:hover:text-zinc-300 transition"
             />
           </ActionTooltip>
         </div>
