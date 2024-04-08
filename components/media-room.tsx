@@ -22,9 +22,9 @@ export const MediaRoom = ({
   const [token, setToken] = useState("");
 
   useEffect(() => {
-    if (!user?.firstName ) return;
+    if (!user?.username ) return;
 
-    const name = `${user.firstName} `;
+    const name = `${user.username} `;
 
     (async () => {
       try {
@@ -35,7 +35,7 @@ export const MediaRoom = ({
         console.log(e);
       }
     })()
-  }, [user?.firstName, chatId]);
+  }, [user?.username, chatId]);
 
   if (token === "") {
     return (
