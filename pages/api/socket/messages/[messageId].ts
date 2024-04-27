@@ -16,7 +16,6 @@ export default async function handler(
   try {
     const profile = await currentProfilePages(req);
     const { messageId, serverId, channelId } = req.query;
-    const { content } = req.body;
 
     if (!profile) {
       return res.status(401).json({ error: "Unauthorized" });
@@ -93,18 +92,17 @@ export default async function handler(
     }
 
     if (req.method === "DELETE") {
-      message = await db.message.delete({
+      // Delete the message
+      await db.message.delete({
         where: {
           id: messageId as string,
-        },
-        include: {
-          member: {
-            include: {
-              profile: true,
-            }
-          }
         }
       });
+
+      const updateKey = `chat:${channelId}:messages:update`;
+      res?.socket?.server?.io?.emit(updateKey, { id: messageId });
+
+      return res.status(200).json({ success: true });
     }
 
     if (req.method === "PATCH") {
@@ -117,7 +115,7 @@ export default async function handler(
           id: messageId as string,
         },
         data: {
-          content,
+          content: req.body.content,
         },
         include: {
           member: {
@@ -127,13 +125,12 @@ export default async function handler(
           }
         }
       })
+
+      const updateKey = `chat:${channelId}:messages:update`;
+      res?.socket?.server?.io?.emit(updateKey, message);
+
+      return res.status(200).json(message);
     }
-
-    const updateKey = `chat:${channelId}:messages:update`;
-
-    res?.socket?.server?.io?.emit(updateKey, message);
-
-    return res.status(200).json(message);
   } catch (error) {
     console.log("[MESSAGE_ID]", error);
     return res.status(500).json({ error: "Internal Error" });
