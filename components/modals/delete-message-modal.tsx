@@ -46,11 +46,11 @@ export const DeleteMessageModal = () => {
       <DialogContent className="bg-[#1D1D1D] text-[#C3FC5E] p-0 overflow-hidden">
         <DialogHeader className="pt-8 px-6">
           <DialogTitle className="text-2xl text-center font-bold">
-            Delete Message
+            Delete
           </DialogTitle>
           <DialogDescription className="text-center text-zinc-500">
             Are you sure you want to do this? <br />
-            The message will be permanently deleted.
+            It cant be restored
           </DialogDescription>
         </DialogHeader>
         <DialogFooter className="bg-[#101010] px-6 py-4">

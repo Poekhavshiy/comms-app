@@ -94,14 +94,9 @@ export default async function handler(
     }
 
     if (req.method === "DELETE") {
-      directMessage = await db.directMessage.update({
+      directMessage = await db.directMessage.delete({
         where: {
           id: directMessageId as string,
-        },
-        data: {
-          fileUrl: null,
-          content: "This message has been deleted.",
-          deleted: true,
         },
         include: {
           member: {
@@ -110,9 +105,9 @@ export default async function handler(
             }
           }
         }
-      })
+      });
     }
-
+    
     if (req.method === "PATCH") {
       if (!isMessageOwner) {
         return res.status(401).json({ error: "Unauthorized" });
