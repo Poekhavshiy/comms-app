@@ -2,7 +2,7 @@ import { currentProfile } from "@/lib/current-profile";
 import { db } from "@/lib/db";
 import { ChannelType, MemberRole } from "@prisma/client";
 import { redirect } from "next/navigation";
-import { Hash, Mic, ShieldAlert, ShieldCheck, Video } from "lucide-react";
+import { FlaskConical, Hash, Mic, ShieldAlert, ShieldCheck, Video } from "lucide-react";
 
 import { ServerHeader } from "./server-header";
 import { ServerSearch } from "./server-search";
@@ -25,9 +25,8 @@ const iconMap = {
 
 const roleIconMap = {
     [MemberRole.GUEST]: null,
-    [MemberRole.MODERATOR]: <ShieldCheck className="h-4 w-4 mr-2 text-red-500"/>,
-    [MemberRole.ADMIN]: <ShieldAlert className="h-4 w-4 mr-2 text-red-500"/>
-
+    [MemberRole.MODERATOR]: <FlaskConical className="h-4 w-4 ml-2 text-lime-300" />,
+    [MemberRole.ADMIN]: <FlaskConical className="h-4 w-4 ml-2 text-lime-300" />
 }
 
 export const ServerSidebar = async ({

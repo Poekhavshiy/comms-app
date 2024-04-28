@@ -48,7 +48,7 @@ export const DeleteMessageModal = () => {
           <DialogTitle className="text-2xl text-center font-bold">
             Delete
           </DialogTitle>
-          <DialogDescription className="text-center text-zinc-500">
+          <DialogDescription className="text-center text-zinc-300">
             Are you sure you want to do this? <br />
             It cant be restored
           </DialogDescription>

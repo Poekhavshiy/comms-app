@@ -11,7 +11,7 @@ export const SocketIndicator = () => {
       <Badge 
       
         variant="outline" 
-        className="bg-[#DF80FF] text-white border-none"
+        className="bg-[#C3FC5E] text-white border-none"
       >
         Connecting
       </Badge>
@@ -22,7 +22,7 @@ export const SocketIndicator = () => {
   return (
     <Badge 
       variant="outline" 
-      className="bg-lime-300 text-white border-none"
+      className="bg-[#C3FC5E] text-white border-none"
     >
       Live: Real-time updates
     </Badge>
