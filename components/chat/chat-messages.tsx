@@ -109,7 +109,7 @@ export const ChatMessages = ({
           ) : (
             <button
               onClick={() => fetchNextPage()}
-              className="text-zinc-500 hover:text-zinc-600 dark:text-zinc-400 text-xs my-4 dark:hover:text-zinc-300 transition"
+              className="text-zinc-500 hover:text-[#C3FC5E] dark:text-zinc-400 text-xs my-4 dark:hover:text-[#C3FC5E] transition"
             >
               Load previous messages
             </button>

@@ -189,12 +189,12 @@ body,
 
 /* applied to button */
 .custom-class  > *[data-ut-element="label"] {
-  color: #B2FF33;
+  color: #C3FC5E;
   
 }
 
 .custom-class:hover  > *[data-ut-element="label"] {
-  color: #B2FF33;
+  color: #C3FC5E;
   
 }
 
@@ -213,7 +213,7 @@ body,
 
 .cl-internal-1ptfnbv {
   font-size: 20px;
-  color: #B2FF33;
+  color: #C3FC5E;
 
 }
 
@@ -227,5 +227,20 @@ body,
 }
 
 .cl-userButtonPopoverActionButtonIcon__manageAccount {
-  color: #B2FF33;
+  color: #C3FC5E;
+}
+
+
+.cl-card {
+  border: none;
+}
+
+.cl-navbar {
+  background-color: #191919;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.cl-navbarButton {
+  color:#C3FC5E;
 }
