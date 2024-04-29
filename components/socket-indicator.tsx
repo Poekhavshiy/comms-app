@@ -13,7 +13,7 @@ export const SocketIndicator = () => {
         variant="outline" 
         className="bg-[#DF80FF] text-white border-none"
       >
-        Connecting
+        Connecting (vercel)
       </Badge>
       
     )

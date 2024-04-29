@@ -42,7 +42,7 @@ interface ChatItemProps {
 const roleIconMap = {
   "GUEST": null,
   "MODERATOR": <FlaskConical className="h-4 w-4 ml-2 text-[#C3FC5E]" />,
-  "ADMIN": <FlaskConical className="h-4 w-4 ml-2 text-[#C3FC5E]" />,
+  "ADMIN": <FlaskConical className="h-4 w-4 ml-2 text-[#EF4444]" />,
 }
 
 const formSchema = z.object({
