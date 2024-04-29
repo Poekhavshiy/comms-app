@@ -15,7 +15,7 @@ interface ServerMemberProps {
 const roleIconMap = {
   [MemberRole.GUEST]: null,
   [MemberRole.MODERATOR]: <FlaskConical className="h-4 w-4 ml-2 text-lime-300" />,
-  [MemberRole.ADMIN]: <FlaskConical className="h-4 w-4 ml-2 text-lime-300" />
+  [MemberRole.ADMIN]: <FlaskConical className="h-4 w-4 ml-2 text-[#EF4444]" />
 }
 
 export const ServerMember = ({
