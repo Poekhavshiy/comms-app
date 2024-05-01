@@ -3,6 +3,7 @@ import { redirect } from "next/navigation";
 
 import { db } from "@/lib/db";
 import { currentProfile } from "@/lib/current-profile";
+import { initialProfile } from "@/lib/initial-profile";
 
 interface InviteCodePageProps {
   params: {
@@ -16,7 +17,8 @@ const InviteCodePage = async ({
   const profile = await currentProfile();
 
   if (!profile) {
-    return redirectToSignIn();
+    await initialProfile();
+    return redirect(`/invite/${params.inviteCode}`);
   }
 
   if (!params.inviteCode) {
