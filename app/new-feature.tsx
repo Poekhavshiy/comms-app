@@ -1,7 +1,7 @@
 const NewStuff = () => {
     return ( 
         <div>
-            welflhe;dod
+            test updated!
         </div>
      );
 }
