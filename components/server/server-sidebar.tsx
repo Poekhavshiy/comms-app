@@ -18,14 +18,14 @@ interface ServerSidebarProps {
 }
 
 const iconMap = {
-    [ChannelType.TEXT]: <Hash className="mr-2 h-4 w-4 text-lime-300" />,
-    [ChannelType.AUDIO]: <Mic className="mr-2 h-4 w-4 text-lime-300" />,
-    [ChannelType.VIDEO]: <Video className="mr-2 h-4 w-4 text-lime-300" />
+    [ChannelType.TEXT]: <Hash className="mr-2 h-4 w-4 text-zinc-300" />,
+    [ChannelType.AUDIO]: <Mic className="mr-2 h-4 w-4 text-zinc-300" />,
+    [ChannelType.VIDEO]: <Video className="mr-2 h-4 w-4 text-zinc-300" />
 };
 
 const roleIconMap = {
     [MemberRole.GUEST]: null,
-    [MemberRole.MODERATOR]: <FlaskConical className="h-4 w-4 ml-2 text-lime-300" />,
+    [MemberRole.MODERATOR]: <FlaskConical className="h-4 w-4 ml-2 text-zinc-300" />,
     [MemberRole.ADMIN]: <FlaskConical className="h-4 w-4 ml-2 text-[#EF4444]" />
 }
 
@@ -122,7 +122,7 @@ export const ServerSidebar = async ({
                       ]}
                       />
                 </div>
-                <Separator className="bg-lime-300 dark:bg-lime-300 rounded-md my-2" />
+                <Separator className="bg-zinc-300 dark:bg-zinc-300 rounded-md my-2" />
         
                 {!!textChannels?.length && (
                     <div className="mb-2">

@@ -62,9 +62,9 @@ export const ServerSearch = ({
         onClick={() => setOpen(true)}
         className="group px-2 py-2 rounded-md flex items-center gap-x-2 w-full bg-neutral-950 hover:bg-neutral-950 dark:hover:bg-neutral-900 transition"
       >
-        <Search className="w-4 h-4 text-lime-300 dark:text-lime-300" />
+        <Search className="w-4 h-4 text-zinc-300 dark:text-zinc-300" />
         <p
-          className="font-semibold text-sm text-lime-300 dark:text-lime-300 group-hover:text-lime-300 dark:group-hover:text-lime-300 transition"
+          className="font-semibold text-sm text-zinc-300 dark:text-zinc-300 group-hover:text-zinc-300 dark:group-hover:text-zinc-300 transition"
         >
           Search
         </p>
@@ -78,7 +78,7 @@ export const ServerSearch = ({
         <CommandInput placeholder="Search all channels and members" />
         <CommandList>
           <CommandEmpty>
-            <span className="text-lime-300">
+            <span className="text-zinc-300">
             No Results found
             </span>
           </CommandEmpty>

@@ -20,9 +20,9 @@ const { onOpen } = useModal();
                 window.open('https://react-call.vercel.app/invite/808337f9-1941-4d91-aa49-c6046bc1783b');
               }}
               className="group flex items-center">
-                <div className="flex mx-3 h-[48px] w-[48px] rounded-[24px] group-hover:rounded-[16px] transition-all overflow-hidden items-center justify-center bg-background dark:bg-neutral-950 group-hover:bg-lime-300">
+                <div className="flex mx-3 h-[48px] w-[48px] rounded-[24px] group-hover:rounded-[16px] transition-all overflow-hidden items-center justify-center bg-background dark:bg-neutral-950 group-hover:bg-zinc-300">
                     <FlaskConical
-                    className="group-hover:text-black transtion text-[#C3FC5E]"
+                    className="group-hover:text-black transtion text-[#d1d1d1]"
                     size={36}
                     />
                 </div>

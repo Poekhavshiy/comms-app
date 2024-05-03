@@ -41,16 +41,16 @@ interface ServerHeaderProps {
         <DropdownMenu>
             <DropdownMenuTrigger className="focus:outline-none"
             asChild>
-                <button className="w-full text-md font-semibold px-3 flex items-center h-12 border-lime-300 dark:border-lime-300 border-b-2 hover: bg-neutral-950 dark:hover: bg-neutral-900/1 transition">
+                <button className="w-full text-md font-semibold px-3 flex items-center h-12 border-zinc-300 dark:border-zinc-300 border-b-2 hover: bg-neutral-950 dark:hover: bg-neutral-900/1 transition">
                     {server.name}
                     <ChevronDown className="h-5 w-5 ml-auto"/>
                 </button>
             </DropdownMenuTrigger>
-            <DropdownMenuContent className="w-56 text-xs font-medium text-lime-300 dark:text-lime-300 space-y-[2px]">
+            <DropdownMenuContent className="w-56 text-xs font-medium text-zinc-300 dark:text-zinc-300 space-y-[2px]">
                 {isModerator && (
                     <DropdownMenuItem 
                     onClick={() => onOpen("invite",{ server })}
-                    className="text-lime-300 dark:text-lime-300 px-3 py-2 text-sm cursor-pointer">
+                    className="text-zinc-300 dark:text-zinc-300 px-3 py-2 text-sm cursor-pointer">
                         Invite Friends
                         <UserPlus className="h-4 w-43 ml-auto"/>
                     </DropdownMenuItem>

@@ -77,9 +77,9 @@ const formSchema = z.object({
                     <button
                       type="button"
                       onClick={() => onOpen("messageFile", { apiUrl, query })}
-                      className="absolute top-7 left-8 h-[24px] w-[24px] bg-[#191919] dark:bg-[#191919] hover:bg-[#C3FC5E] dark:hover:bg-[#C3FC5E] transition rounded-full p-1 flex items-center justify-center"
+                      className="absolute top-7 left-8 h-[24px] w-[24px] bg-[#191919] dark:bg-[#191919] hover:bg-[#d1d1d1] dark:hover:bg-[#d1d1d1] transition rounded-full p-1 flex items-center justify-center"
                     >
-                      <Plus className="text-[#C3FC5E] dark:text-[#C3FC5E] hover:text-[#191919] dark:hover:text-[#191919]" />
+                      <Plus className="text-[#d1d1d1] dark:text-[#d1d1d1] hover:text-[#191919] dark:hover:text-[#191919]" />
                     </button>
                     <Input
                       disabled={isLoading}

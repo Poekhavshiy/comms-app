@@ -74,7 +74,7 @@ export const ChatMessages = ({
   if (status === "loading") {
     return (
       <div className="flex flex-col flex-1 justify-center items-center">
-        <Loader2 className="h-7 w-7 text-[#C3FC5E] animate-spin my-4" />
+        <Loader2 className="h-7 w-7 text-[#d1d1d1] animate-spin my-4" />
         <p className="text-xs text-zinc-500 dark:text-zinc-400">
           Loading...
         </p>
@@ -105,11 +105,11 @@ export const ChatMessages = ({
       {hasNextPage && (
         <div className="flex justify-center">
           {isFetchingNextPage ? (
-            <Loader2 className="h-6 w-6 text-[#C3FC5E] animate-spin my-4" />
+            <Loader2 className="h-6 w-6 text-[#d1d1d1] animate-spin my-4" />
           ) : (
             <button
               onClick={() => fetchNextPage()}
-              className="text-zinc-500 hover:text-[#C3FC5E] dark:text-zinc-400 text-xs my-4 dark:hover:text-[#C3FC5E] transition"
+              className="text-zinc-500 hover:text-[#d1d1d1] dark:text-zinc-400 text-xs my-4 dark:hover:text-[#d1d1d1] transition"
             >
               Load previous messages
             </button>

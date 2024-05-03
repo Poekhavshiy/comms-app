@@ -35,13 +35,13 @@ export const NavigationItem = ({
         className="group relative flex items-center"
       >
         <div className={cn(
-          "absolute left-0 bg-lime-300 rounded-r-full transition-all w-[4px]",
+          "absolute left-0 bg-zinc-300 rounded-r-full transition-all w-[4px]",
           params?.serverId !== id && "group-hover:h-[20px]",
           params?.serverId === id ? "h-[36px]" : "h-[8px]"
         )} />
         <div className={cn(
           "relative group flex mx-3 h-[48px] w-[48px] rounded-[24px] group-hover:rounded-[16px] transition-all overflow-hidden",
-          params?.serverId === id && "bg-lime-300/10 text-lime-300 rounded-[16px]"
+          params?.serverId === id && "bg-zinc-300/10 text-zinc-300 rounded-[16px]"
         )}>
           <Image
             fill

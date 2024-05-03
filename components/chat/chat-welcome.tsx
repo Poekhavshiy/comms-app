@@ -13,7 +13,7 @@ export const ChatWelcome = ({
     <div className="space-y-2 px-4 mb-4">
       {type === "channel" && (
         <div className="h-[75px] w-[75px] rounded-full bg-[#1D1D1D] dark:bg-[#1D1D1D] flex items-center justify-center">
-          <Hash className="h-12 w-12 text-[#C3FC5E]" />
+          <Hash className="h-12 w-12 text-[#d1d1d1]" />
         </div>
       )}
       <p className="text-xl md:text-3xl font-bold">

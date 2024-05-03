@@ -99,7 +99,7 @@ const handleClose = ( ) => {
 
     return (
         <Dialog open={isModalOpen} onOpenChange={handleClose}>
-            <DialogContent className="bg-neutral-950 text-lime-300 p-0 overflow-hidden">
+            <DialogContent className="bg-neutral-950 text-zinc-300 p-0 overflow-hidden">
               <DialogHeader className="pt-8 px-6">
                 <DialogTitle className='text-2xl text-center font-bold'>
                    Create channel
@@ -144,7 +144,7 @@ const handleClose = ( ) => {
                     >
                       <FormControl>
                         <SelectTrigger
-                          className="bg-neutral-900/50 border-0 focus:ring-0 text-lime-300 ring-offset-0 focus:ring-offset-0 capitalize outline-none"
+                          className="bg-neutral-900/50 border-0 focus:ring-0 text-zinc-300 ring-offset-0 focus:ring-offset-0 capitalize outline-none"
                         >
                           <SelectValue placeholder="Select a channel type" />
                         </SelectTrigger>

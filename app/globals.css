@@ -97,13 +97,13 @@ body,
   font-size: 16px;
   text-transform: none;
   color: #000100;
-  background-color: #C3FC5E;
+  background-color: #d1d1d1;
 }
  
 .cl-formButtonPrimary:hover,
 .cl-formButtonPrimary:focus,
 .cl-formButtonPrimary:active {
-  color: #C3FC5E;
+  color: #d1d1d1;
   background-color: #222224;
 }
 
@@ -111,37 +111,37 @@ body,
   font-size: 14px;
   text-transform: none;
   color: #000100;
-  background-color: #C3FC5E;
+  background-color: #d1d1d1;
 }
  
 .cl-internal-15amzqo {
   font-size: 14px;
   text-transform: none;
-  color: #C3FC5E;
+  color: #d1d1d1;
 }
 
 .cl-internal-15amzqo:hover {
   font-size: 14px;
   text-transform: none;
-  color: #C3FC5E;
+  color: #d1d1d1;
 }
 
 .cl-internal-qk1s8p {
   font-size: 14px;
   text-transform: none;
-  color: #C3FC5E;
+  color: #d1d1d1;
 }
 
 .cl-internal-oaq42g {
   font-size: 14px;
   text-transform: none;
-  color: #C3FC5E;
+  color: #d1d1d1;
 }
 
 .cl-internal-rvp25y {
   font-size: 14px;
   text-transform: none;
-  color: #C3FC5E;
+  color: #d1d1d1;
 }
 
 
@@ -179,22 +179,22 @@ body,
  
 /* applied to the upload indicator when uploading */
 .custom-class > *[data-ut-element="button"][data-state="uploading"]::after {
-  background-color: #C3FC5E;
+  background-color: #d1d1d1;
 }
 
 /* applied to the upload indicator when uploading */
 .custom-class > *[data-ut-element="button"][data-state="uploading"]::after {
-  background-color: #C3FC5E;
+  background-color: #d1d1d1;
 }
 
 /* applied to button */
 .custom-class  > *[data-ut-element="label"] {
-  color: #C3FC5E;
+  color: #d1d1d1;
   
 }
 
 .custom-class:hover  > *[data-ut-element="label"] {
-  color: #C3FC5E;
+  color: #d1d1d1;
   
 }
 
@@ -213,7 +213,7 @@ body,
 
 .cl-internal-1ptfnbv {
   font-size: 20px;
-  color: #C3FC5E;
+  color: #d1d1d1;
 
 }
 
@@ -227,7 +227,7 @@ body,
 }
 
 .cl-userButtonPopoverActionButtonIcon__manageAccount {
-  color: #C3FC5E;
+  color: #d1d1d1;
 }
 
 
@@ -242,5 +242,5 @@ body,
 }
 
 .cl-navbarButton {
-  color:#C3FC5E;
+  color:#d1d1d1;
 }

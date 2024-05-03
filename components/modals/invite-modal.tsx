@@ -55,7 +55,7 @@ export const InviteModal = ()=> {
 
     return (
         <Dialog open={isModalOpen} onOpenChange={onClose}>
-            <DialogContent className="bg-neutral-950 text-lime-300 p-0 overflow-hidden">
+            <DialogContent className="bg-neutral-950 text-zinc-300 p-0 overflow-hidden">
               <DialogHeader className="pt-8 px-6">
                 <DialogTitle className='text-2xl text-center font-bold'>
                 Server Invite Link
@@ -71,7 +71,7 @@ export const InviteModal = ()=> {
                     <Button 
                     disabled={isLoading}
                     onClick={onCopy} 
-                    className= "bg-lime-300 text-neutral-950 hover:bg-neutral-900 hover:text-lime-300" 
+                    className= "bg-zinc-300 text-neutral-950 hover:bg-neutral-900 hover:text-zinc-300" 
                     size="icon">
                         {copied 
                         ? <Check className="w-4 h-4" />
@@ -83,7 +83,7 @@ export const InviteModal = ()=> {
                 disabled={isLoading}
 
                 size="sm"
-                className="text-xs text-lime-300 bg-neutral-900 hover:bg-lime-300 hover:text-neutral-950 ml-2 mt-2">
+                className="text-xs text-zinc-300 bg-neutral-900 hover:bg-zinc-300 hover:text-neutral-950 ml-2 mt-2">
                     Genereate a new link
                     <RefreshCw className="w-4 h-4 ml-2"/>
                 </Button>

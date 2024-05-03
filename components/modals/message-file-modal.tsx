@@ -74,7 +74,7 @@ export const MessageFileModal = () => {
 
   return (
     <Dialog open={isModalOpen} onOpenChange={handleClose}>
-      <DialogContent className="bg-[#1D1D1D] text-lime-300 p-0 overflow-hidden">
+      <DialogContent className="bg-[#1D1D1D] text-zinc-300 p-0 overflow-hidden">
         <DialogHeader className="pt-8 px-6">
           <DialogTitle className="text-2xl text-center font-bold">
             Add an attachment

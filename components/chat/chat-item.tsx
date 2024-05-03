@@ -42,7 +42,7 @@ interface ChatItemProps {
 
 const roleIconMap = {
   "GUEST": null,
-  "MODERATOR": <FlaskConical className="h-4 w-4 ml-2 text-[#C3FC5E]" />,
+  "MODERATOR": <FlaskConical className="h-4 w-4 ml-2 text-[#d1d1d1]" />,
   "ADMIN": <FlaskConical className="h-4 w-4 ml-2 text-[#EF4444]" />,
 }
 
@@ -165,12 +165,12 @@ export const ChatItem = ({
           )}
           {isRAR && (
             <div className="relative flex items-center p-2 mt-2 rounded-md bg-background/10">
-              <Package2 className="h-10 w-10 fill-[#292929] stroke-[#C3FC5E]" />
+              <Package2 className="h-10 w-10 fill-[#292929] stroke-[#d1d1d1]" />
               <a
                 href={fileUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="ml-2 text-sm text-[#C3FC5E] dark:text-[#C3FC5E] hover:underline"
+                className="ml-2 text-sm text-[#d1d1d1] dark:text-[#d1d1d1] hover:underline"
               >
                 RAR archive
               </a>
@@ -191,7 +191,7 @@ export const ChatItem = ({
             )}>
               {content}
               {isUpdated && !deleted && (
-                <span className="text-[10px] mx-2 text-[#C3FC5E] dark:text-[#C3FC5E]">
+                <span className="text-[10px] mx-2 text-[#d1d1d1] dark:text-[#d1d1d1]">
                   (updated)
                 </span>
               )}
@@ -237,7 +237,7 @@ export const ChatItem = ({
             <ActionTooltip label="Edit">
               <Edit
                 onClick={() => setIsEditing(true)}
-                className="cursor-pointer ml-auto w-4 h-4 text-zinc-500 hover:text-[#C3FC5E] dark:hover:text-[#C3FC5E] transition"
+                className="cursor-pointer ml-auto w-4 h-4 text-zinc-500 hover:text-[#d1d1d1] dark:hover:text-[#d1d1d1] transition"
               />
             </ActionTooltip>
           )}

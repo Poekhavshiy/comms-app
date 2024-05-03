@@ -12,7 +12,7 @@ import { QueryProvider } from "@/components/providers/query-provider";
 const font = Open_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "ReactCall",
+  title: "Comms APP",
   description: "Ugly but works like charm",
 };
 
@@ -26,13 +26,13 @@ export default function RootLayout({
      <html lang="en" suppressHydrationWarning>
       <body className={cn(
         font.className, 
-        "bg-lime bg-lime-300 dark:bg-lime-300"
+        "bg-lime bg-zinc-300 dark:bg-zinc-300"
         )}>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
           enableSystem={false}
-          storageKey="ReactCall-theme"
+          storageKey="CommsAPP-theme"
           >
             <SocketProvider>
               <ModalProvider />

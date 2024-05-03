@@ -73,7 +73,7 @@ if(!isMounted) {
 }
     return (
         <Dialog open>
-            <DialogContent className="bg-neutral-950 text-lime-300 p-0 overflow-hidden">
+            <DialogContent className="bg-neutral-950 text-zinc-300 p-0 overflow-hidden">
               <DialogHeader className="pt-8 px-6">
                 <DialogTitle className='text-2xl text-center font-bold'>
                    Create server

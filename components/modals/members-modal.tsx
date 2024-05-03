@@ -46,7 +46,7 @@ import {
 
 const roleIconMap = {
   "GUEST": null,
-  "MODERATOR": <FlaskConical className="h-4 w-4 ml-2 text-[#C3FC5E]" />,
+  "MODERATOR": <FlaskConical className="h-4 w-4 ml-2 text-[#d1d1d1]" />,
   "ADMIN": <FlaskConical className="h-4 w-4 ml-2 text-[#EF4444]" />,
 };
 
@@ -102,7 +102,7 @@ export const MembersModal = () => {
 
   return (
     <Dialog open={isModalOpen} onOpenChange={onClose}>
-      <DialogContent className="bg-neutral-950 text-[#C3FC5E] overflow-hidden">
+      <DialogContent className="bg-neutral-950 text-[#d1d1d1] overflow-hidden">
         <DialogHeader className="pt-8 px-6">
           <DialogTitle className="text-2xl text-center font-bold">
             Server members
@@ -128,14 +128,14 @@ export const MembersModal = () => {
                 <div className="ml-auto">
                   <DropdownMenu>
                     <DropdownMenuTrigger>
-                      <MoreVertical className="h-5 w-5 text-[#C3FC5E]"/>
+                      <MoreVertical className="h-5 w-5 text-[#d1d1d1]"/>
                     </DropdownMenuTrigger>
                     <DropdownMenuContent side="left">
                       <DropdownMenuSub>
                         <DropdownMenuSubTrigger
                         className="flex items-center">
                           <ShieldQuestion 
-                          className="w-4 h-4 mr-2 text-[#C3FC5E]" />
+                          className="w-4 h-4 mr-2 text-[#d1d1d1]" />
                           <span>Role</span>
                         </DropdownMenuSubTrigger>
                         <DropdownMenuPortal>
@@ -143,21 +143,21 @@ export const MembersModal = () => {
                             <DropdownMenuItem 
                             onClick={() => onRoleChange(member.id, "GUEST")}
                             >
-                              <Beaker className="h-4 w-4 mr-2 text-lime-300"/>
+                              <Beaker className="h-4 w-4 mr-2 text-zinc-300"/>
                               Guest
                               {member.role === "GUEST" && (
                                 <Check 
-                                className="h-4 w-4 ml-auto text-lime-300" />
+                                className="h-4 w-4 ml-auto text-zinc-300" />
                               )}
                             </DropdownMenuItem>
                             <DropdownMenuItem 
                             onClick={() => onRoleChange(member.id, "MODERATOR")}
                             >
-                              <FlaskConical className="h-4 w-4 mr-2 text-lime-300"/>
+                              <FlaskConical className="h-4 w-4 mr-2 text-zinc-300"/>
                               Admin
                               {member.role === "MODERATOR" && (
                                 <Check 
-                                className="h-4 w-4 ml-auto text-lime-300" />
+                                className="h-4 w-4 ml-auto text-zinc-300" />
                               )}
                             </DropdownMenuItem>
                           </DropdownMenuSubContent>
@@ -176,7 +176,7 @@ export const MembersModal = () => {
               )}
               {loadingId === member.id && (
                 <Loader2 
-                className="animate-spin text-lime-300 ml-auto w-4 h-4"/>
+                className="animate-spin text-zinc-300 ml-auto w-4 h-4"/>
               )}
             </div>
           ))}

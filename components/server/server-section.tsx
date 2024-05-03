@@ -33,7 +33,7 @@ export const ServerSection = ({
         <ActionTooltip label="Create Channel" side="top">
           <button
             onClick={() => onOpen("createChannel", { channelType })}
-            className="text-[#C3FC5E] hover:text-neutral-950 hover:bg-[#C3FC5E] dark:text-[#C3FC5E] dark:hover:text-neutral-950 dark:hover:bg-[#C3FC5E] transition rounded-full"
+            className="text-[#d1d1d1] hover:text-neutral-950 hover:bg-[#d1d1d1] dark:text-[#d1d1d1] dark:hover:text-neutral-950 dark:hover:bg-[#d1d1d1] transition rounded-full"
           >
             <Plus className="h-4 w-4" />
           </button>
@@ -43,7 +43,7 @@ export const ServerSection = ({
         <ActionTooltip label="Manage Members" side="top">
           <button
             onClick={() => onOpen("members", { server })}
-            className="text-[#C3FC5E] hover:text-red-500 dark:text-[#C3FC5E] dark:hover:text-red-500 transition"
+            className="text-[#d1d1d1] hover:text-red-500 dark:text-[#d1d1d1] dark:hover:text-red-500 transition"
           >
             <Wrench className="h-4 w-4" />
           </button>

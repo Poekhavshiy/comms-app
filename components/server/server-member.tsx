@@ -14,7 +14,7 @@ interface ServerMemberProps {
 
 const roleIconMap = {
   [MemberRole.GUEST]: null,
-  [MemberRole.MODERATOR]: <FlaskConical className="h-4 w-4 ml-2 text-lime-300" />,
+  [MemberRole.MODERATOR]: <FlaskConical className="h-4 w-4 ml-2 text-zinc-300" />,
   [MemberRole.ADMIN]: <FlaskConical className="h-4 w-4 ml-2 text-[#EF4444]" />
 }
 
@@ -45,8 +45,8 @@ export const ServerMember = ({
       />
       <p
         className={cn(
-          "font-semibold text-sm text-lime-300 group-hover:text-zinc-600 dark:text-zinc-400 dark:group-hover:text-zinc-300 transition",
-          params?.memberId === member.id && "text-primary dark:text-lime-300 dark:group-hover:text-white"
+          "font-semibold text-sm text-zinc-300 group-hover:text-zinc-600 dark:text-zinc-400 dark:group-hover:text-zinc-300 transition",
+          params?.memberId === member.id && "text-primary dark:text-zinc-300 dark:group-hover:text-white"
         )}
       >
         {member.profile.name}
