@@ -28,6 +28,7 @@
     "@radix-ui/react-slot": "^1.0.2",
     "@radix-ui/react-tooltip": "^1.0.7",
     "@tanstack/react-query": "^4.35.3",
+    "@uiw/react-color-wheel": "^2.1.1",
     "@uploadthing/react": "^6.3.4",
     "@uploadthing/solid": "^6.2.1",
     "attr-accept": "^2.2.2",
