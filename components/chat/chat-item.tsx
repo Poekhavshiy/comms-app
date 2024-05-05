@@ -10,6 +10,7 @@ import { Edit, FileIcon, FlaskConical, Package2, ShieldAlert, ShieldCheck, Trash
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { useRouter, useParams } from "next/navigation";
+import ReactPlayer from "react-player";
 
 import { UserAvatar } from "@/components/user-avatar";
 import { ActionTooltip } from "@/components/action-tooltip";
@@ -148,7 +149,7 @@ export const ChatItem = ({
             </span>
           </div>
           {isImage && (
-            <a 
+            <a
               href={fileUrl}
               target="_blank"
               rel="noopener noreferrer"
@@ -165,7 +166,7 @@ export const ChatItem = ({
           {isRAR && (
             <div className="relative flex items-center p-2 mt-2 rounded-md bg-background/10">
               <Package2 className="h-10 w-10 fill-[#292929] stroke-[#C3FC5E]" />
-              <a 
+              <a
                 href={fileUrl}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -174,6 +175,14 @@ export const ChatItem = ({
                 RAR archive
               </a>
             </div>
+          )}
+          {content.includes("youtube.com") && (
+              <ReactPlayer
+                  url={content}
+                  controls={true}
+                  width="690px"
+                  height="388px"
+              />
           )}
           {!fileUrl && !isEditing && (
             <p className={cn(
@@ -190,7 +199,7 @@ export const ChatItem = ({
           )}
           {!fileUrl && isEditing && (
             <Form {...form}>
-              <form 
+              <form
                 className="flex items-center w-full gap-x-2 pt-2"
                 onSubmit={form.handleSubmit(onSubmit)}>
                   <FormField
@@ -234,7 +243,7 @@ export const ChatItem = ({
           )}
           <ActionTooltip label="Delete">
             <Trash
-              onClick={() => onOpen("deleteMessage", { 
+              onClick={() => onOpen("deleteMessage", {
                 apiUrl: `${socketUrl}/${id}`,
                 query: socketQuery,
                })}
