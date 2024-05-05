@@ -10,6 +10,7 @@ import NavigationAction from "./navigation-action";
 import { NavigationItem } from "./navigation-item";
 import { ModeToggle } from "@/components/mode-toggle";
 import { UserButton } from "@clerk/nextjs";
+import ColorWheel from "./color-wheel-item";
 
 export const NavigationSidebar = async () => {
     const profile = await currentProfile();
@@ -32,6 +33,7 @@ export const NavigationSidebar = async () => {
         <div
           className="space-y-4 flex flex-col items-center h-full text-primary -full dark:bg-[#191919] py-3">
             <NavigationAction/>
+            <ColorWheel/>
             <Separator
               className="h-[2px] bg-neutral-700 dark:bg-neutral-700 rounded-md w-10 mx-auto"
             />
