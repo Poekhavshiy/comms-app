@@ -10,7 +10,6 @@ import NavigationAction from "./navigation-action";
 import { NavigationItem } from "./navigation-item";
 import { ModeToggle } from "@/components/mode-toggle";
 import { UserButton } from "@clerk/nextjs";
-import PublicServer from "./public-server";
 
 export const NavigationSidebar = async () => {
     const profile = await currentProfile();
