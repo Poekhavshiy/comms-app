@@ -22,7 +22,7 @@ const { onOpen } = useModal();
               className="group flex items-center">
                 <div className="flex mx-3 h-[48px] w-[48px] rounded-[24px] group-hover:rounded-[16px] transition-all overflow-hidden items-center justify-center bg-background dark:bg-neutral-950 group-hover:bg-lime-300">
                     <FlaskConical
-                    className="group-hover:text-black transtion text-lime-300"
+                    className="group-hover:text-black transtion text-[#C3FC5E]"
                     size={36}
                     />
                 </div>
