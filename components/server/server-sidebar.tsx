@@ -2,7 +2,7 @@ import { currentProfile } from "@/lib/current-profile";
 import { db } from "@/lib/db";
 import { ChannelType, MemberRole } from "@prisma/client";
 import { redirect } from "next/navigation";
-import { FlaskConical, Hash, Mic, ShieldAlert, ShieldCheck, Video } from "lucide-react";
+import { FlaskConical, Hash, Mic, Video } from "lucide-react";
 
 import { ServerHeader } from "./server-header";
 import { ServerSearch } from "./server-search";
@@ -12,6 +12,7 @@ import { Separator } from "@/components/ui/separator";
 import { ServerSection } from "./server-section";
 import { ServerChannel } from "./server-channel";
 import { ServerMember } from "./server-member";
+import {ServerSwitch} from "@/components/server/server-switch";
 
 interface ServerSidebarProps {
     serverId: string;
@@ -206,6 +207,7 @@ export const ServerSidebar = async ({
                 )}
                 
               </ScrollArea>
+            <ServerSwitch/>
         </div>
     )
 }

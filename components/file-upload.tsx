@@ -41,7 +41,7 @@ export const FileUpload = ({
     if (value && fileType === "rar") {
         return (
             <div className="relative flex items-center p-2 mt-2 rounded-md bg-background/10">
-                <FileIcon className="h-10 w-10 fill-[#C3FC5E] stroke-neutral-900"/>
+                <FileIcon className="h-12 w-12 fill-[#C3FC5E] stroke-neutral-900"/>
                 <a 
                 href={value}
                 target="_blank"
