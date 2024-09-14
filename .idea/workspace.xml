@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63125969-1c8d-497e-a0d2-cb817ae60955" name="Changes" comment="fine" />
+    <list default="true" id="63125969-1c8d-497e-a0d2-cb817ae60955" name="Changes" comment="fine">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/navigation/public-server.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/navigation/public-server.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,7 +47,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;D:\\react-call\\node_modules\\typescript\\lib&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\New folder\\Comms APP\\node_modules\\typescript\\lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -69,6 +72,8 @@
       <workItem from="1714964159750" duration="200000" />
       <workItem from="1714964362941" duration="700000" />
       <workItem from="1714969750222" duration="189000" />
+      <workItem from="1726329303870" duration="543000" />
+      <workItem from="1726331770361" duration="47000" />
     </task>
     <task id="LOCAL-00001" summary="fine">
       <option name="closed" value="true" />
@@ -78,7 +83,23 @@
       <option name="project" value="LOCAL" />
       <updated>1726329120033</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="fine">
+      <option name="closed" value="true" />
+      <created>1726329328772</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1726329328772</updated>
+    </task>
+    <task id="LOCAL-00003" summary="fine">
+      <option name="closed" value="true" />
+      <created>1726329590586</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1726329590586</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -94,5 +115,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fine" />
+    <option name="LAST_COMMIT_MESSAGE" value="fine" />
   </component>
 </project>
