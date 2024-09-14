@@ -4,40 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63125969-1c8d-497e-a0d2-cb817ae60955" name="Changes" comment="fine">
+    <list default="true" id="63125969-1c8d-497e-a0d2-cb817ae60955" name="Changes" comment="">
       <changelist_data name="Poekhavshiy" email="hroter.ukr@gmail.com" date="1714741254000" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/chat/chat-input.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/chat/chat-input.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/chat/chat-item.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/chat/chat-item.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/chat/chat-messages.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/chat/chat-messages.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/chat/chat-video-button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/chat/chat-video-button.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/chat/chat-welcome.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/chat/chat-welcome.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/file-upload.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/file-upload.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/media-room.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/media-room.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/modals/create-channel-modal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modals/create-channel-modal.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/modals/create-server-modal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modals/create-server-modal.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/modals/delete-channel-modal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modals/delete-channel-modal.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/modals/delete-message-modal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modals/delete-message-modal.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/modals/delete-server-modal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modals/delete-server-modal.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/modals/edit-channel-modal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modals/edit-channel-modal.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/modals/edit-server-modal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modals/edit-server-modal.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/modals/initial-modal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modals/initial-modal.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/modals/invite-modal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modals/invite-modal.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/modals/leave-server-modal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modals/leave-server-modal.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/modals/members-modal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modals/members-modal.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/modals/message-file-modal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modals/message-file-modal.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/navigation/navigation-action.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/navigation/navigation-action.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/navigation/navigation-item.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/navigation/navigation-item.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/navigation/public-server.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/navigation/public-server.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/server/server-channel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/server/server-channel.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/server/server-header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/server/server-header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/server/server-member.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/server/server-member.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/server/server-search.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/server/server-search.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/server/server-section.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/server/server-section.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/server/server-sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/server/server-sidebar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ui/button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ui/button.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,21 +36,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/react-call",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "D:\\New folder\\Comms APP\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/react-call&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\react-call\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -119,9 +88,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="fine" />
-    <option name="LAST_COMMIT_MESSAGE" value="fine" />
   </component>
 </project>

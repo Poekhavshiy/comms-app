@@ -30,7 +30,7 @@ export const FileUpload = ({
                 />
                 <button
                   onClick={() => onChange("")}
-                  className="bg-[#d1d1d1] text-black p-1 rounded-full absolute -top-2 -right-2 shadow-sm"
+                  className="bg-[#C3FC5E] text-black p-1 rounded-full absolute -top-2 -right-2 shadow-sm"
                   type="button">
                     <X className="h-4 w-4" />
                 </button>
@@ -41,18 +41,18 @@ export const FileUpload = ({
     if (value && fileType === "rar") {
         return (
             <div className="relative flex items-center p-2 mt-2 rounded-md bg-background/10">
-                <FileIcon className="h-10 w-10 fill-[#d1d1d1] stroke-neutral-900"/>
+                <FileIcon className="h-10 w-10 fill-[#C3FC5E] stroke-neutral-900"/>
                 <a 
                 href={value}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="ml-2 text-sm text-[#d1d1d1] dark:text-[#d1d1d1]"
+                className="ml-2 text-sm text-[#C3FC5E] dark:text-[#C3FC5E]"
                 >
                     {value}
                 </a>
                 <button
                   onClick={() => onChange("")}
-                  className="bg-[#d1d1d1] text-black p-1 rounded-full absolute top-0 right-0 shadow-sm"
+                  className="bg-[#C3FC5E] text-black p-1 rounded-full absolute top-0 right-0 shadow-sm"
                   type="button">
                     <X className="h-4 w-4" />
                 </button>
